@@ -1,0 +1,315 @@
+/* Import Google Fonts (Poppins and Outfit) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif; /* Use the Poppins font as the primary font, with sans-serif as fallback */
+    margin: 0; /* Remove default margin from the body */
+    padding: 0; /* Remove default padding from the body */
+}
+
+/* Content Wrapper */
+#content-wrapper {
+    display: flex; /* Enable flexbox layout for the content wrapper */
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #003366; /* Set a dark blue background color for the header */
+    color: white; /* Set the text color to white for contrast */
+    padding: 20px 0; /* Add padding only on top and bottom for spacing */
+}
+.header-content {
+    max-width: 1350px; /* Restrict the header content to a maximum width */
+    margin: 0 auto; /* Center the header content horizontally */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically at the center */
+    padding: 0 20px; /* Add horizontal padding for spacing */
+}
+
+header nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Arrange list items in a row */
+    gap: 20px; /* Add space between each list item */
+}
+
+header nav ul li a {
+    color: white; /* Set link text color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font size for link text */
+    font-weight: 600; /* Use a bold font weight */
+}
+
+header nav ul li a.current, header nav ul li a:hover {
+    color: #b6b6b6; /* Change link color on hover or if marked as current */
+}
+
+/* Home Page Banner Image and Welcome Message */
+.banner-image {
+    position: relative; /* Enable absolute positioning for child elements */
+    height: 370px; /* Set the height of the banner image */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-image img {
+    width: 100%; /* Make the image cover the entire width */
+    height: 100%; /* Make the image cover the entire height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container (no distortion) */
+    filter: brightness(75%); /* Darken the image slightly */
+}
+
+.banner-image div {
+    position: absolute; /* Position the text container on top of the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for accurate centering */
+    width: 90%; /* Text container width (responsive) */
+    font-family: "Outfit", sans-serif; /* Use the Outfit font for text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2.5rem; /* Set the text size */
+    color: white; /* Set text color to white for contrast */
+    text-align: center; /* Center the text within the container */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+}
+
+/* Home Page Intro Paragraph */
+.intro-text {
+    max-width: 925px; /* Restrict the paragraph width */
+    width: 90%; /* Make the paragraph width responsive */
+    margin: 15px auto; /* Center the paragraph with vertical margin */
+    padding: 5px; /* Add slight padding inside the paragraph */
+    text-align: center; /* Center the text */
+    font-size: 20px; /* Set font size for the paragraph */
+}
+
+/* Leaflet Map */
+/* This CSS formats the container for the Leaflet map */
+/* A stylesheet and script are both linked/imported on index.html so that the map will work */
+/* Quick Start Guide for Reference: https://leafletjs.com/examples/quick-start/ */
+#map {
+    margin: 20px auto; /* Center the map with vertical margin */
+    margin-bottom: 35px; /* Add extra bottom margin for spacing */
+    width: 90%; /* Set the width to be responsive */
+    max-width: 1350px; /* Limit the maximum width */
+    height: 480px; /* Set the height of the map */
+}
+
+/* Horizontal Line */
+hr {
+    width: 90%; /* Set the line width to be responsive */
+    max-width: 1350px; /* Restrict the maximum width of the line */
+    border: 0.5px solid #ccc; /* Set a thin, light gray border */
+}
+
+/* Footer and Navigation */
+footer {
+    background-color: #a3cef1; /* Set a light blue background color for the footer */
+    color: black; /* Set the text color to black for contrast */
+    text-align: center; /* Center the text within the footer */
+    padding-top: 35px; /* Add padding at the top for spacing */
+    padding-bottom: 20px; /* Add padding at the bottom for spacing */
+    margin-top: 25px; /* Create space above the footer */
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullet points from the footer navigation list */
+    display: flex; /* Arrange list items in a row */
+    justify-content: center; /* Center the navigation links */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Add vertical spacing between footer elements */
+    gap: 20px; /* Create space between navigation items */
+}
+
+footer nav ul li {
+    margin: 0; /* Remove any default margin from list items to make sure it's centered*/
+}
+
+footer nav ul li a {
+    color: black; /* Set link text color to black */
+    text-decoration: none; /* Remove underline from footer links */
+    font-size: 16px; /* Set font size for link text */
+    font-weight: 600; /* Make link text bold */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Underline the link on hover for emphasis */
+}
+
+footer p {
+    margin-top: 10px; /* Add space above the paragraph (copyright) for separation */
+}
+
+/* Setting Properties for Various Elements on the Destinations and Feedback Page */
+#page-title, .weather-widget, #beaufort, #kings-mountain, #sullivans-island, #columbia, .page-info, form {
+    margin: auto; /* Center the element horizontally */
+    width: 90%; /* Set a responsive width for the element */
+    max-width: 1350px; /* Limit the maximum width */
+}
+
+#page-title {
+    font-size: 24px; /* Set a larger font size for the page title */
+}
+
+section#page-title h1 {
+    margin-top: 20px; /* Add space above the heading */
+    margin-bottom: 15px; /* Add space below the heading */
+}
+
+.page-info {
+    font-size: 18px; /* Set the font size for informational text */
+}
+
+/* Destinationn Page Slideshow CSS */
+/* For this code, I referenced this HOW TO article on W3Schools: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* This uses both CSS and JS; the script is in the destinations.html file */
+.mySlides {display: none} /* Hide all slideshow images by default */
+
+.mySlides img {
+    width: 100%; /* Make the image cover the entire container width */
+    height: 100%; /* Make the image cover the entire container height */
+    object-fit: cover; /* Scale image without distortion */
+    position: absolute; /* Position image within the slideshow container */
+    vertical-align: middle; /* Align image vertically in the center */
+    z-index: 1; /* Ensure images are behind navigation buttons (prev and next) */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px; /* Set maximum width for slideshow */
+    height: 500px; /* Set fixed height */
+    position: relative; /* Allow positioning of child elements */
+    margin: auto; /* Center the slideshow on the page */
+    z-index: 0; /* Default z-index to position background elements */
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+.numbertext, .prev, .next {
+    position: absolute; /* Position the elements within their containing block */
+    z-index: 2; /* Ensure these elements appear on top of other content */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position the buttons within the slideshow */
+    top: 50%; /* Align buttons vertically to the center */
+    width: auto; /* Adjust width to fit content */
+    padding: 16px; /* Add padding for click area */
+    margin-top: -22px; /* Offset button to properly center it */
+    color: white; /* Set button text color to white */
+    font-weight: bold; /* Make button text bold */
+    font-size: 18px; /* Set font size of button text */
+    transition: 0.6s ease; /* Smooth transition for hover effects */
+    border-radius: 0 4px 4px 0; /* Round the corners for a smooth look */
+    user-select: none; /* Prevent text selection on click */
+    background-color: rgba(0,0,0,0.5); /* Add a semi-transparent black background */
+}
+
+.next {
+    right: 0; /* Position next button on the right */
+    border-radius: 4px 0 0 4px; /* Round the opposite corners */
+}
+
+.prev:hover, .next:hover {
+    background-color: black; /* Darken background on hover */
+}
+
+/* Number text */
+.numbertext {
+    color: #f2f2f2; /* Set light gray text color */
+    background-color: rgba(0,0,0,0.8); /* Set a semi-transparent background */
+    font-size: 12px; /* Set font size for numbering text */
+    padding: 8px 12px; /* Add padding for spacing */
+    position: absolute; /* Position numbering within slideshow */
+    top: 0; /* Align numbering to the top */
+    border-radius: 4px; /* Round the corners for a smooth look */
+    margin: 5px; /* Add margin around numbering */
+    font-weight: bold; /* Make numbering text bold */
+}
+
+/* Fade Animation for Slideshow Images */
+.fade {
+    animation-name: fade; /* Name of the animation */
+    animation-duration: 1.5s; /* Animation duration for fading effect */
+}
+
+@keyframes fade {
+    from {opacity: .7} /* Start with 70% opacity */
+    to {opacity: 1} /* End with full opacity */
+}
+/* End of Destination Page Slideshow CSS */
+
+/* Destination Section Layout */
+.destination {
+    display: flex; /* Use flexbox to arrange items side by side */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between items */
+}
+
+.slideshow-container {
+    flex: 1; /* Allow the slideshow to take up available space */
+    max-width: 60%; /* Restrict the maximum width of the slideshow */
+    margin: 5px; /* Add margin for spacing */
+}
+
+.destination-content {
+    flex: 1; /* Allow the content to take up available space */
+    max-width: 40%; /* Restrict the maximum width of the content */
+    margin: 5px; /* Add margin for spacing */
+}
+
+/* Destination Content and Weather Widget Formatting */
+.destination-content h2 {
+    font-size: 26px; /* Set a font size for destination headings */
+    margin: 5px 0px 0px 0px; /* Set margins around the heading */
+}
+
+.destination-content p {
+    font-size: 18px; /* Set a font size for descriptive text */
+    margin: 10px 0px 0px 0px; /* Set margins around the paragraph */
+}
+
+.weather-widget {
+    padding: 23px 0px 15px 0px; /* Add top and bottom padding for spacing */
+}
+
+/* Feedback Page Form */
+.main-label {
+    font-weight: 600; /* Make form labels bold for emphasis */
+}
+ 
+input[type=text], input[type=email] {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 250px; /* Set fixed width for text and email input fields */
+    padding: 8px; /* Add padding inside input fields */
+    margin-top: 4px; /* Add a small margin above input fields */
+    border: 1px solid #aaa; /* Add a light gray border */
+    border-radius: 4px; /* Round the corners of input fields */
+}
+
+textarea {
+    box-sizing: border-box; /* Include padding and border in total width and height */
+    width: 100%; /* Make the textarea fill the available width */
+    padding: 8px; /* Add padding inside the textarea */
+    margin-top: 4px; /* Add margin above the textarea */
+    border: 1px solid #aaa; /* Add a light gray border */
+    border-radius: 4px; /* Round the corners of the textarea */
+}
+ 
+input[type=submit] {
+    color: white; /* Set the button text color to white */
+    background-color: black; /* Set a black background color for the button */
+    padding: 10px 15px 10px 15px; /* Add padding inside the button for spacing */
+    border: none; /* Remove the default border */
+    border-radius: 4px; /* Round the corners of the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: "Poppins", sans-serif; /* Use the Poppins font for consistency */
+    font-weight: bold; /* Make the button text bold */
+}
+ 
+input[type=submit]:hover {
+    background-color: rgb(70, 70, 70); /* Lighten the button color on hover */
+}

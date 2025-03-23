@@ -2,11 +2,13 @@
 <html lang="en">
     <head>
         <title>Destinations &ndash; Carolina Compass</title>
+        <link rel="icon" type="image/x-icon" href="./images/logo/favicon.ico">
         <meta charset="UTF-8">
         <meta name="description" content="Explore South Carolina's unique destinations, from historic Lowcountry towns and Revolutionary War battlefields to scenic beaches and vibrant cities.">
         <meta name="keywords" content="South Carolina, travel, destinations, Beaufort, Parris Island, Kings Mountain, Sullivan's Island, Columbia, historic sites, nature">
         <meta name="author" content="Carter Vermullen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRXEBWW1LP"></script>
@@ -19,243 +21,329 @@
         </script>
     </head>
     <body>
-        <header>
-            <a href="index.html"><img src="./images/logo/carolina-compass-logo-white-2x.png" alt="Carolina Compass logo (white)" width="200"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="content-wrapper">
 
-        <main>
-            <section id="page-title">
-                <h1>Destinations</h1>
-            </section>
-            <hr>
-            <section id="beaufort">
-                <div class="slideshow-container" id="slideshow1">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 9</div>
-                      <img src="./images/beaufort/1-welcome-to-beaufort-sc-sign.png" alt="Welcome to Beaufort, SC sign" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 9</div>
-                      <img src="./images/beaufort/2-iwo-jima-monument-parris-island.png" alt="Iwo Jima monument - Parris Island" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 9</div>
-                      <img src="./images/beaufort/3-cannon-waterfront-bridge.jpg" alt="Cannon waterfront bridge" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 9</div>
-                        <img src="./images/beaufort/4-scenic-waterfront-spanish-moss.png" alt="Scenic waterfront spanish moss" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 9</div>
-                        <img src="./images/beaufort/5-sunset-over-lake-with-spanish-moss.jpg" alt="Sunset over lake with spanish moss" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 9</div>
-                        <img src="./images/beaufort/6-moonlit-bridge-reflections.jpg" alt="Moonlit bridge reflections" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">7 / 9</div>
-                        <img src="./images/beaufort/7-sunset-waterfront-walkway.jpg" alt="Sunset waterfront walkway" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">8 / 9</div>
-                        <img src="./images/beaufort/8-holiday-street-decor-lights.jpg" alt="Holiday street decor lights" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">9 / 9</div>
-                        <img src="./images/beaufort/9-marina-sunset-boats.jpg" alt="Marina sunset boats" width="200">
-                    </div>
+            <header>
+                <div class="header-content">
+                    <a href="index.html"><img src="./images/logo/carolina-compass-logo-white-2x.png" alt="Carolina Compass logo (white)" width="150"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="destinations.html" class="current">Destinations</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="destination-content">
-                    <h2>Beaufort/Parris Island</h2>
-                    <p>These historic Lowcountry coastal regions showcase the beauty of South Carolina. Beaufort's scenic historic downtown features unique architecture, well-preserved homes, and live oak trees draped in Spanish moss. The area offers excellent dining, with some of the best fresh seafood in the state. With its slow pace and welcoming Southern culture, it is a great place to unwind and take in the surroundings. Just next door, Parris Island is home to one of only two Marine Corps recruit training bases in the country.</p>
+            </header>
+
+            <main>
+                <section id="page-title">
+                    <h1>Destinations</h1>
+                </section>
+
+                <hr>
+
+                <section class="destination" id="beaufort">
+                    <div class="slideshow-container" id="slideshow1">
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="./images/beaufort/1-welcome-to-beaufort-sc-sign.png" alt="Welcome to Beaufort, SC sign">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="./images/beaufort/2-iwo-jima-monument-parris-island.png" alt="Iwo Jima monument - Parris Island">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="./images/beaufort/3-cannon-waterfront-bridge.jpg" alt="Cannon waterfront bridge">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="./images/beaufort/4-scenic-waterfront-spanish-moss.png" alt="Scenic waterfront spanish moss">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="./images/beaufort/5-sunset-over-lake-with-spanish-moss.jpg" alt="Sunset over lake with spanish moss">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="./images/beaufort/6-moonlit-bridge-reflections.jpg" alt="Moonlit bridge reflections">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="./images/beaufort/7-sunset-waterfront-walkway.jpg" alt="Sunset waterfront walkway">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="./images/beaufort/8-holiday-street-decor-lights.jpg" alt="Holiday street decor lights">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="./images/beaufort/9-marina-sunset-boats.jpg" alt="Marina sunset boats">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow1')">❮</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow1')">❯</a>
+                    </div>
+
+                    <div class="destination-content">
+                        <h2>Beaufort/Parris Island</h2>
+                        <p>These historic Lowcountry coastal regions showcase the beauty of South Carolina. Beaufort's scenic historic downtown features unique architecture, well-preserved homes, and live oak trees draped in Spanish moss. The area offers excellent dining, with some of the best fresh seafood in the state. With its slow pace and welcoming Southern culture, it is a great place to unwind and take in the surroundings. Just next door, Parris Island is home to one of only two Marine Corps recruit training bases in the country.</p>
+                    </div>
+                </section>
+
+                <div class="weather-widget">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/32d43n80d67/beaufort/?unit=us" data-label_1="BEAUFORT" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons" data-theme="weather_one" >BEAUFORT WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
                 </div>
-            </section>
-            <div class="weather-widget">
-                <p><em>*PLACEHOLDER FOR WEATHER WIDGET*</em></p>
-            </div>
-            <hr>
-            <section id="kings-mountain">
-                <div class="destination-content">
-                    <h2>Kings Mountain National Military Park</h2>
-                    <p>While South Carolina is known for its coastal destinations like Hilton Head, Charleston, and Myrtle Beach, the Upstate region has its own mountain landscapes to explore. Kings Mountain National Military Park, located in the Upstate, marks the site of a key 1780 Revolutionary War battle where Patriot militia defeated Loyalist forces, a conflict that divided communities and even families. Visitors can hike trails that pass through rolling hills and dense forests, especially colorful in the fall. Next to the park, Kings Mountain State Park offers fishing, camping, and equestrian trails. The area combines history and outdoor activities, making it a great spot for both history enthusiasts and nature lovers.</p>
+
+                <hr>
+
+                <section class="destination" id="kings-mountain">
+                    <div class="destination-content">
+                        <h2>Kings Mountain National Military Park</h2>
+                        <p>While South Carolina is known for its coastal destinations like Hilton Head, Charleston, and Myrtle Beach, the Upstate region has its own mountain landscapes to explore. Kings Mountain National Military Park, located in the Upstate, marks the site of a key 1780 Revolutionary War battle where Patriot militia defeated Loyalist forces, a conflict that divided communities and even families. Visitors can hike trails that pass through rolling hills and dense forests, especially colorful in the fall. Next to the park, Kings Mountain State Park offers fishing, camping, and equestrian trails. The area combines history and outdoor activities, making it a great spot for both history enthusiasts and nature lovers.</p>
+                    </div>
+
+                    <div class="slideshow-container" id="slideshow2">
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="./images/kings-mountain/1-kings-mountain-monument-autumn.jpg" alt="Kings Mountain monument - autumn">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="./images/kings-mountain/2-path-through-forest-spring.jpg" alt="Path through the forest - spring">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="./images/kings-mountain/3-kings-mountain-cliff-view.jpg" alt="Kings Mountain cliff view">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="./images/kings-mountain/4-crawford-lake-reflection-misty-morning.jpg" alt="Crawford lake reflection - misty morning">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="./images/kings-mountain/5-kings-mountain-park-sign.jpg" alt="Kings Mountain National Militray Park sign">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="./images/kings-mountain/6-kings-mountain-state-park-entrance.jpg" alt="Kings Mountain State Park entrance">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">❮</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow2')">❯</a>
+                    </div>
+                </section>
+
+                <div class="weather-widget">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/35d11n81d49/29702/?unit=us" data-label_1="KINGS MOUNTAIN" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons" data-theme="weather_one" >KINGS MOUNTAIN WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
                 </div>
-                <div class="slideshow-container" id="slideshow2">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 6</div>
-                      <img src="./images/kings-mountain/1-kings-mountain-monument-autumn.jpg" alt="Kings Mountain monument - autumn" width="200">
+
+                <hr>
+
+                <section class="destination" id="sullivans-island">
+                    <div class="slideshow-container" id="slideshow3">
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="./images/sullivans-island/1-sullivans-island-beach-sunset.png" alt="Sullivan's Island beach sunset">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="./images/sullivans-island/2-sullivans-island-sunset-dunes.JPG" alt="Sullivan's Island sunset dunes">
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="./images/sullivans-island/3-sullivans-island-lighthouse.jpg" alt="Sullivan's Island lighthouse">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="./images/sullivans-island/4-fort-moultrie-sullivans-island.jpg" alt="Fort Moultrie Sullivan's Island">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="./images/sullivans-island/5-fort-moultrie-artillery.jpg" alt="Fort Moultrie artillery">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="./images/sullivans-island/6-uss-yorktown.jpg" alt="USS Yorktown">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="./images/sullivans-island/7-fa-18-hornet-on-aircraft-carrier.jpg" alt="F/A-18 Hornet on aircraft carrier">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="./images/sullivans-island/8-military-aircraft-exhibit.jpg" alt="Military aircraft exhibit">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="./images/sullivans-island/9-poes-tavern.jpg" alt="Poe's Tavern restaurant">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow3')">❮</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow3')">❯</a>
                     </div>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 6</div>
-                      <img src="./images/kings-mountain/2-path-through-forest-spring.jpg" alt="Path through the forest - spring" width="200">
+                    <div class="destination-content">
+                        <h2>Sullivan's Island</h2>
+                        <p>Sullivan's Island, located in the Lowcountry at the entrance of Charleston Harbor, is known for its beaches and historical significance. The island's wide sandy shores provide a quiet place to relax or spend time by the water admiring the ships guided by the "Charleston Light." Fort Moultrie offers a look into early American defense and was active during the Civil War. Just across the water in Mount Pleasant, Patriots Point features the USS Yorktown, a retired aircraft carrier now serving as a museum. The island is also home to Poe's Tavern, a popular restaurant named after Edgar Allan Poe. With its coastal scenery and historical sites, Sullivan's Island is a great place to visit.</p>
                     </div>
+                </section>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 6</div>
-                      <img src="./images/kings-mountain/3-kings-mountain-cliff-view.jpg" alt="Kings Mountain cliff view" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="./images/kings-mountain/4-crawford-lake-reflection-misty-morning.jpg" alt="Crawford lake reflection - misty morning" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="./images/kings-mountain/5-kings-mountain-park-sign.jpg" alt="Kings Mountain National Militray Park sign" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="./images/kings-mountain/6-kings-mountain-state-park-entrance.jpg" alt="Kings Mountain State Park entrance" width="200">
-                    </div>
+                <div class="weather-widget">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/32d76n79d84/sullivans-island/?unit=us" data-label_1="SULLIVAN'S ISLAND" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons" data-theme="weather_one" >SULLIVAN'S ISLAND WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
                 </div>
-            </section>
-            <div class="weather-widget">
-                <p><em>*PLACEHOLDER FOR WEATHER WIDGET*</em></p>
-            </div>
-            <hr>
-            <section id="sullivans-island">
-                <div class="slideshow-container" id="slideshow3">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 9</div>
-                      <img src="./images/sullivans-island/1-sullivans-island-beach-sunset.png" alt="Sullivan's Island beach sunset" width="200">
+
+                <hr>
+
+                <section class="destination" id="columbia">
+                    <div class="destination-content">
+                        <h2>Columbia</h2>
+                        <p>Columbia, the capital of South Carolina and home to the University of South Carolina Gamecocks, combines history and culture with modern attractions. Visitors can explore Main Street and The Vista, where shops, restaurants, and historic sites line the streets. The city also features popular spots like the Riverbanks Zoo & Garden and the South Carolina State Museum.  The University of South Carolina not only brings history to the city with the Horseshoe and the country's oldest free-standing library, but also energy, especially during football season when fans gather to support the Gamecocks at Williams-Brice Stadium. With its walkable streets and variety of activities, Columbia is a place that offers something for everyone.</p>
                     </div>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 9</div>
-                      <img src="./images/sullivans-island/2-sullivans-island-sunset-dunes.JPG" alt="Sullivan's Island sunset dunes" width="200">
-                    </div>
+                    <div class="slideshow-container" id="slideshow4">
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="./images/columbia/1-sc-state-house.jpg" alt="South Carolina State House">
+                        </div>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 9</div>
-                      <img src="./images/sullivans-island/3-sullivans-island-lighthouse.jpg" alt="Sullivan's Island lighthouse" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="./images/columbia/2-gervais-street-bridge-columbia.jpg" alt="Gervais Street Bridge Columbia, SC">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 9</div>
-                        <img src="./images/sullivans-island/4-fort-moultrie-sullivans-island.jpg" alt="Fort Moultrie Sullivan's Island" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="./images/columbia/3-sc-state-museum.jpg" alt="South Carolina State Museum">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 9</div>
-                        <img src="./images/sullivans-island/5-fort-moultrie-artillery.jpg" alt="Fort Moultrie artillery" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="./images/columbia/4-usc-gamecocks-football-game-flag.jpeg" alt="University of South Carolina Gamecocks football game flag">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 9</div>
-                        <img src="./images/sullivans-island/6-uss-yorktown.jpg" alt="USS Yorktown" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="./images/columbia/5-usc-horseshoe-gate.jpg" alt="University of South Carolina campus - Horseshoe">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">7 / 9</div>
-                        <img src="./images/sullivans-island/7-fa-18-hornet-on-aircraft-carrier.jpg" alt="F/A-18 Hornet on aircraft carrier" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="./images/columbia/6-usc-smokestack.jpg" alt="University of South Carolina campus - Smokestack">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">8 / 9</div>
-                        <img src="./images/sullivans-island/8-military-aircraft-exhibit.jpg" alt="Military aircraft exhibit" width="200">
-                    </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="./images/columbia/7-usc-swearingen-engineering-center.jpg" alt="University of South Carolina campus - Swearingen Engineering Center">
+                        </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">9 / 9</div>
-                        <img src="./images/sullivans-island/9-poes-tavern.jpg" alt="Poe's Tavern restaurant" width="200">
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="./images/columbia/8-usc-campus-fountain.jpg" alt="University of South Carolina campus - Fountain">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="./images/columbia/9-sunset-williams-brice-stadium-aerial-view.png" alt="University of South Carolina Gamecocks - Williams-Brice Stadium">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow4')">❮</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow4')">❯</a>
                     </div>
+                </section>
+
+                <div class="weather-widget">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/34d00n81d03/columbia/?unit=us" data-label_1="COLUMBIA" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons" data-theme="weather_one" >COLUMBIA WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
                 </div>
-                <div class="destination-content">
-                    <h2>Sullivan's Island</h2>
-                    <p>Sullivan's Island, located in the Lowcountry at the entrance of Charleston Harbor, is known for its beaches and historical significance. The island's wide sandy shores provide a quiet place to relax or spend time by the water admiring the ships guided by the “Charleston Light.” Fort Moultrie offers a look into early American defense and was active during the Civil War. Just across the water in Mount Pleasant, Patriots Point features the USS Yorktown, a retired aircraft carrier now serving as a museum. The island is also home to Poe's Tavern, a popular restaurant named after Edgar Allan Poe. With its coastal scenery and historical sites, Sullivan's Island is a great place to visit.</p>
-                </div>
-            </section>
-            <div class="weather-widget">
-                <p><em>*PLACEHOLDER FOR WEATHER WIDGET*</em></p>
-            </div>
-            <hr>
-            <section id="columbia">
-                <div class="destination-content">
-                    <h2>Columbia</h2>
-                    <p>Columbia, the capital of South Carolina and home to the University of South Carolina Gamecocks, combines history and culture with modern attractions. Visitors can explore Main Street and The Vista, where shops, restaurants, and historic sites line the streets. The city also features popular spots like the Riverbanks Zoo & Garden and the South Carolina State Museum.  The University of South Carolina not only brings history to the city with the Horseshoe and the country's oldest free-standing library, but also energy, especially during football season when fans gather to support the Gamecocks at Williams-Brice Stadium. With its walkable streets and variety of activities, Columbia is a place that offers something for everyone.</p>
-                </div>
-                <div class="slideshow-container" id="slideshow4">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 9</div>
-                      <img src="./images/columbia/1-sc-state-house.jpg" alt="South Carolina State House" width="200">
-                    </div>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 9</div>
-                      <img src="./images/columbia/2-gervais-street-bridge-columbia.jpg" alt="Gervais Street Bridge Columbia, SC" width="200">
-                    </div>
+                <hr>
+            </main>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 9</div>
-                      <img src="./images/columbia/3-sc-state-museum.jpg" alt="South Carolina State Museum" width="200">
-                    </div>
+            <!-- JS Slideshow Script -->
+            <!-- W3Schools HOW TO article: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <script>
+                // Store the current slide index for each slideshow in an object
+                let slideIndexes = {
+                  slideshow1: 1,
+                  slideshow2: 1,
+                  slideshow3: 1,
+                  slideshow4: 1
+                };
+                
+                // Function to display the correct slide in a slideshow
+                function showSlides(slideshowId, n) {
+                  // Select all slides within the specified slideshow
+                  let slides = document.querySelectorAll(`#${slideshowId} .mySlides`);
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 9</div>
-                        <img src="./images/columbia/4-usc-gamecocks-football-game-flag.jpeg" alt="University of South Carolina Gamecocks football game flag" width="200">
-                    </div>
+                  // Reset the slide index to the first slide if it exceeds the total number of slides
+                  if (n > slides.length) { slideIndexes[slideshowId] = 1; }
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 9</div>
-                        <img src="./images/columbia/5-usc-horseshoe-gate.jpg" alt="University of South Carolina campus - Horseshoe" width="200">
-                    </div>
+                  // Reset the slide index to the last slide if it goes below 1
+                  if (n < 1) { slideIndexes[slideshowId] = slides.length; }
+                  
+                  // Hide all slides in the slideshow
+                  slides.forEach(slide => slide.style.display = "none");
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 9</div>
-                        <img src="./images/columbia/6-usc-smokestack.jpg" alt="University of South Carolina campus - Smokestack" width="200">
-                    </div>
+                  // Display the current slide based on the slide index
+                  slides[slideIndexes[slideshowId] - 1].style.display = "block";
+                }
+                
+                // Function to change slides in a slideshow (next or previous)
+                function plusSlides(n, slideshowId) {
+                  // Adjust the slide index and show the updated slide
+                  showSlides(slideshowId, slideIndexes[slideshowId] += n);
+                }
+                
+                // Initialize all slideshows by displaying their first slides
+                Object.keys(slideIndexes).forEach(slideshowId => showSlides(slideshowId, slideIndexes[slideshowId]));
+            </script>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">7 / 9</div>
-                        <img src="./images/columbia/7-usc-swearingen-engineering-center.jpg" alt="University of South Carolina campus - Swearingen Engineering Center" width="200">
-                    </div>
+            <footer>
+                <a href="index.html"><img src="./images/logo/carolina-compass-logo-black-2x.png" alt="Carolina Compass logo (black)" width="200"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+                <p>Copyright © 2025</p>
+            </footer>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">8 / 9</div>
-                        <img src="./images/columbia/8-usc-campus-fountain.jpg" alt="University of South Carolina campus - Fountain" width="200">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">9 / 9</div>
-                        <img src="./images/columbia/9-sunset-williams-brice-stadium-aerial-view.png" alt="University of South Carolina Gamecocks - Williams-Brice Stadium" width="200">
-                    </div>
-                </div>
-            </section>
-            <div class="weather-widget">
-                <p><em>*PLACEHOLDER FOR WEATHER WIDGET*</em></p>
-            </div>
-            <hr>
-        </main>
-
-        <footer>
-            <a href="index.html"><img src="./images/logo/carolina-compass-logo-black-2x.png" alt="Carolina Compass logo (black)" width="200"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-            </nav>
-            <p>Copyright © 2025</p>
-        </footer>
+        </div>
     </body>
 </html>
