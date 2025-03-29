@@ -74,6 +74,10 @@ header nav ul li a.current, header nav ul li a:hover {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
 }
 
+section.banner-image {
+    background-color: black; /* Sets a black background color for the banner image section */
+}
+
 /* Home Page Intro Paragraph */
 .intro-text {
     max-width: 925px; /* Restrict the paragraph width */
@@ -288,6 +292,12 @@ input[type=text], input[type=email] {
     margin-top: 4px; /* Add a small margin above input fields */
     border: 1px solid #aaa; /* Add a light gray border */
     border-radius: 4px; /* Round the corners of input fields */
+}
+
+fieldset {
+    border: 0; /* Removes the border from the form fieldset */
+    padding: 0; /* Removes the padding from the form fieldset */
+    margin: 0; /* Removes the margin from the form fieldset */
 }
 
 textarea {
