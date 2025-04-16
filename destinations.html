@@ -10,6 +10,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 
+        <style>
+            /* Destination Page Slideshow CSS */
+            /* For this code, I referenced this HOW TO article on W3Schools: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+            /* This uses both CSS and JS; the script is at the bottom of this page (destinations.html file) */
+            .mySlides {display: none} /* Hide all slideshow images by default */
+
+            .mySlides img {
+                width: 100%; /* Make the image cover the entire container width */
+                height: 100%; /* Make the image cover the entire container height */
+                object-fit: cover; /* Scale image without distortion */
+                position: absolute; /* Position image within the slideshow container */
+                vertical-align: middle; /* Align image vertically in the center */
+                z-index: 1; /* Ensure images are behind navigation buttons (prev and next) */
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px; /* Set maximum width for slideshow */
+                height: 500px; /* Set fixed height */
+                position: relative; /* Allow positioning of child elements */
+                margin: auto; /* Center the slideshow on the page */
+                z-index: 0; /* Default z-index to position background elements */
+                overflow: hidden; /* Prevent content from overflowing the container */
+            }
+
+            .numbertext, .prev, .next {
+                position: absolute; /* Position the elements within their containing block */
+                z-index: 2; /* Ensure these elements appear on top of other content */
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer; /* Change cursor to pointer on hover */
+                position: absolute; /* Position the buttons within the slideshow */
+                top: 50%; /* Align buttons vertically to the center */
+                width: auto; /* Adjust width to fit content */
+                padding: 16px; /* Add padding for click area */
+                margin-top: -22px; /* Offset button to properly center it */
+                color: white; /* Set button text color to white */
+                font-weight: bold; /* Make button text bold */
+                font-size: 18px; /* Set font size of button text */
+                transition: 0.6s ease; /* Smooth transition for hover effects */
+                border-radius: 0 4px 4px 0; /* Round the corners for a smooth look */
+                user-select: none; /* Prevent text selection on click */
+                background-color: rgba(0,0,0,0.5); /* Add a semi-transparent black background */
+            }
+
+            .next {
+                right: 0; /* Position next button on the right */
+                border-radius: 4px 0 0 4px; /* Round the opposite corners */
+            }
+
+            .prev:hover, .next:hover {
+                background-color: black; /* Darken background on hover */
+            }
+
+            /* Number text */
+            .numbertext {
+                color: #f2f2f2; /* Set light gray text color */
+                background-color: rgba(0,0,0,0.8); /* Set a semi-transparent background */
+                font-size: 12px; /* Set font size for numbering text */
+                padding: 8px 12px; /* Add padding for spacing */
+                position: absolute; /* Position numbering within slideshow */
+                top: 0; /* Align numbering to the top */
+                border-radius: 4px; /* Round the corners for a smooth look */
+                margin: 5px; /* Add margin around numbering */
+                font-weight: bold; /* Make numbering text bold */
+            }
+
+            /* Fade Animation for Slideshow Images */
+            .fade {
+                animation-name: fade; /* Name of the animation */
+                animation-duration: 1.5s; /* Animation duration for fading effect */
+            }
+
+            @keyframes fade {
+                from {opacity: .7} /* Start with 70% opacity */
+                to {opacity: 1} /* End with full opacity */
+            }
+            /* End of Destination Page Slideshow CSS */
+        </style>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRXEBWW1LP"></script>
         <script>
